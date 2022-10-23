@@ -11,8 +11,10 @@ hasil_korelasi = {'Pengamatan': ['Koperasi & Tingkat Lulus SMA', 'Koperasi & Tin
 tabel = pd.DataFrame(hasil_korelasi).set_index('Pengamatan')
 
 st.set_page_config(layout='wide',
+                   initial_sidebar_state='expanded',
                    page_title='Koperasi & Literasi (Studi Data Tahun 2016 & 2019)')
 
+st.markdown("<body style='background-color:#3d85c6;'></body>", unsafe_allow_html=True)
 st.markdown("<h1 style='text-align: center; color: orange;'>Hubungan Antara Koperasi & Literasi Pada Tiap Provinsi Di Indonesia</h1>", unsafe_allow_html=True)
 st.markdown("<h3 style='text-align: center; color: white;'>(Studi Data Tahun 2016 & 2019)</h3>", unsafe_allow_html=True)
 
